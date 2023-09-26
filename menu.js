@@ -32,6 +32,14 @@
 
 //CODE HERE
 
+let pizza = {
+    name : `the best`,
+    price : 9,
+    category : `18"`,
+    popularity : 1,
+    rating : 10,
+    tags : [`Veg`, `GF`, `Mara`],
+    }
 
 
 //////////////////PROBLEM 2////////////////////
@@ -44,6 +52,7 @@
 
 //CODE HERE
 
+console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
