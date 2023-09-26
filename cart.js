@@ -35,7 +35,9 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const summedPrice = cart.reduce((acc, curr) => acc + curr.price, 0)
+
+console.log(summedPrice)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -54,6 +56,12 @@ const cart = [
 */
 
 //CODE HERE
+
+function calcFinalPrice(cartTotal, couponValue, tax){
+    return cartTotal * (tax +1) - couponValue   
+}
+
+console.log(calcFinalPrice(100, 5, .1))
 
 
 
@@ -80,6 +88,15 @@ const cart = [
 /*
     TEXT ANSWER HERE
 
+    Name as a string since its just a name = will need to know who the order is for.
+    
+    Address as a string to prevent confusion = resturaunt might deliver.
+
+    Rewards Points as a number to make math easier = to give people credit and insentive to return
+
+    orderHistory as an array of strings to make it easier to keep all items in an order togeather. to make reordering easier.
+
+
 */
 
 /*
@@ -88,3 +105,9 @@ const cart = [
 */
 
 //CODE HERE
+let unwantedPerson = {
+    name : `pnkBtc`,
+    address : `Home`,
+    rewardsPoints : 0,
+    orderHistory : [`fooditem1`, `drink`, `fooditem2`]
+}
